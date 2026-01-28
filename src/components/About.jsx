@@ -7,7 +7,7 @@ const About = () => {
       degree: 'B.Tech – Computer Science & Engineering (AI & Analytics)',
       institution: 'MIT ADT University',
       duration: '2021 – 2025',
-      cgpa: 'CGPA: 7.12'
+      cgpa: '60%'
     },
     {
       degree: '12th Grade',
