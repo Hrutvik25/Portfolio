@@ -4,11 +4,23 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      role: 'Associate Software Engineer',
+      company: 'Prasu Soft Lab',
+      location: 'Pune',
+      duration: 'Aug 2025 - Present',
+      current: true,
+      responsibilities: [
+        'Worked on live web applications from development to deployment',
+        'Collaborated with industry mentors to create learning content for college-level training programs',
+        'Domains Covered: Capital Markets, Cyber Security, Green IT, Telecom Technologies'
+      ]
+    },
+    {
       role: 'Software Developer Intern',
       company: 'HashedBit Innovations',
       location: 'Remote',
       duration: 'Jan 2025 – Jul 2025',
-      current: true,
+      current: false,
       responsibilities: [
         'Developing full-stack applications using Java backend and React frontend',
         'Building and optimizing Learning Management System (LMS) modules',

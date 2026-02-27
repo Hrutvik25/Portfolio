@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>Pune, Maharashtra</li>
               <li>
-                <a href="mailto:hrutvikwayase@gmail.com">hrutvikwayase@gmail.com</a>
+                <a href="mailto:rutvikwayase@gmail.com">rutvikwayase@gmail.com</a>
               </li>
               <li>
                 <a href="tel:+919834202107">+91-9834202107</a>
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            &copy; {currentYear} Hrutvik Wayase. Made with <FaHeart className="heart-icon" /> using React.js
+            &copy; {currentYear} Hrutvik Wayase. Made with  using React.js
           </p>
         </div>
       </div>

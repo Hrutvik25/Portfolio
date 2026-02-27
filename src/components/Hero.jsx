@@ -35,7 +35,7 @@ const Hero = () => {
               </div>
               <div className="info-item">
                 <FaEnvelope />
-                <span>hrutvikwayase@gmail.com</span>
+                <span>rutvikwayase@gmail.com</span>
               </div>
               <div className="info-item">
                 <FaPhone />

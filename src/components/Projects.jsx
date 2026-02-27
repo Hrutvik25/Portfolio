@@ -4,46 +4,32 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'Online Attendance System Using Facial Recognition',
-      description: 'AI-powered attendance tracking system using facial recognition technology. Built with Python and machine learning libraries to automate attendance management with high accuracy.',
-      technologies: ['Python', 'OpenCV', 'Machine Learning', 'Flask'],
-      github: 'https://github.com/Hrutvik25/Online-Attendance-System-Using-Facial-Recognition-.git',
-      category: 'AI/ML'
+      title: 'Prasu Soft Lab - Official Website',
+      description: 'Contributed to the development of the company\'s official website. Implemented frontend components and ensured cross-browser compatibility. Assisted in deployment and post-deployment fixes.',
+      technologies: ['React.js', 'Frontend Development'],
+      live: 'https://prasusoftlab.in/',
+      category: 'Frontend'
     },
     {
-      title: 'AI Voice Assistant',
-      description: 'Intelligent voice-activated assistant capable of understanding natural language commands and performing various tasks. Features speech recognition and text-to-speech capabilities.',
-      technologies: ['Python', 'NLP', 'Speech Recognition', 'AI'],
-      github: 'https://github.com/Hrutvik25/AI-VOICE-ASSISTENT-.git',
-      category: 'AI/ML'
-    },
-    {
-      title: 'Pet Haven - Pet Service E-commerce',
-      description: 'Full-stack e-commerce platform for pet services including grooming bookings, product listings, and user authentication. Complete SDLC implementation with modern UI/UX.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Python', 'Database'],
-      github: 'https://github.com/Hrutvik25/Pet-Haven.git',
+      title: 'SkillBridge - Learning & Mentorship Platform',
+      description: 'Developed a full-stack learning platform featuring course listings, mentor profiles, and admin dashboards. Designed and implemented RESTful APIs for managing users, courses, and mentor data. Built secure CRUD operations and ensured smooth communication between frontend and backend.',
+      technologies: ['Spring Boot', 'React.js', 'MySQL'],
+      live: 'https://skillbridgehub.co.in/',
       category: 'Full-Stack'
     },
     {
-      title: 'Calculator Using Spring Boot',
-      description: 'RESTful calculator application built with Spring Boot framework. Demonstrates backend API development and mathematical operations handling.',
-      technologies: ['Java', 'Spring Boot', 'REST API'],
-      github: 'https://github.com/Hrutvik25/Calculator_SpringBoot',
+      title: 'Bank Management System',
+      description: 'Developed a console-based banking application supporting account creation, deposits, withdrawals, and balance inquiry. Designed modular components using object-oriented programming principles such as encapsulation, inheritance, abstraction, and polymorphism. Implemented input validation and logical flow to ensure accurate transaction handling.',
+      technologies: ['Core Java', 'OOP'],
+      github: 'https://github.com/Hrutvik25/Bank-Management-System-Core-Java-.git',
       category: 'Backend'
     },
     {
-      title: 'Student CRUD App',
-      description: 'Complete student management system with CRUD operations. Built using Spring Boot backend with MySQL database integration for data persistence.',
-      technologies: ['Java', 'Spring Boot', 'MySQL', 'REST API'],
-      github: 'https://github.com/Hrutvik25/Student_Crud_SpringBoot',
+      title: 'Student CRUD Application',
+      description: 'Developed a student management system with complete CRUD (Create, Read, Update, Delete) functionality. Integrated MySQL database for persistent data storage and efficient data retrieval.',
+      technologies: ['Spring Boot', 'MySQL'],
+      github: 'https://github.com/Hrutvik25/Student_Crud_SpringBoot.git',
       category: 'Full-Stack'
-    },
-    {
-      title: 'Employee CRUD App',
-      description: 'Modern employee management application built with React.js. Features include add, update, delete, and view employee records with a responsive user interface.',
-      technologies: ['React.js', 'JavaScript', 'CSS', 'REST API'],
-      github: 'https://github.com/Hrutvik25/Employee_Crud_App_React',
-      category: 'Frontend'
     }
   ];
 
@@ -51,8 +37,8 @@ const Projects = () => {
     <section className="projects">
       <div className="projects-container">
         <div className="section-header">
-          <h2 className="section-title">Featured Projects</h2>
-          <p className="section-subtitle">A showcase of my development work and technical capabilities</p>
+          <h2 className="section-title">Professional Projects</h2>
+          <p className="section-subtitle">Showcasing my contributions to real-world applications and systems</p>
         </div>
 
         <div className="projects-grid">
@@ -72,9 +58,16 @@ const Projects = () => {
               </div>
 
               <div className="project-links">
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-                  <FaGithub /> View Code
-                </a>
+                {project.github && (
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                    <FaGithub /> View Code
+                  </a>
+                )}
+                {project.live && (
+                  <a href={project.live} target="_blank" rel="noopener noreferrer" className="project-link live-link">
+                    <FaExternalLinkAlt /> Live Site
+                  </a>
+                )}
               </div>
             </div>
           ))}
