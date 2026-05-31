@@ -13,7 +13,7 @@ const Hero = () => {
             <h2 className="hero-role">
               <span className="gradient-text">Full Stack Developer</span>
             </h2>
-            <p className="hero-tech">Java • Spring Boot • ReactJS</p>
+            <p className="hero-tech">Java • NodeJS • ReactJS</p>
             <p className="hero-description">
               Passionate about building scalable web applications and AI-powered solutions. 
               Currently crafting seamless user experiences with modern technologies.
